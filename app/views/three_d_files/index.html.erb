@@ -50,9 +50,9 @@
             <td><%= link_to "Delete",  threedfile, method: :delete, confirm: "Are you sure you want to delete #{threedfile.name}?" %>
             
 
-             <%= link_to "Show", three_d_file_url(threedfile)  %></td>  
+             <%= link_to "Show", three_d_file_path(threedfile)  %>
              
-
+             <%= link_to "Embed", oembed_path(threedfile.id) %></td>
          </tr>   
             
       <% end %>   
